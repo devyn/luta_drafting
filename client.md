@@ -41,9 +41,12 @@
     2e  Quickslot 8 begin
     2f  Quickslot 8 end
 
-## Skill
+## Actions
 
     30  Attempt skill <ID : n>
+    31  Attempt use item <ID : n>
+    32  Attempt equip item <ID : n>
+    33  Attempt de-equip item <ID : n>
 
 ## NPC
 

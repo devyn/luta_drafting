@@ -5,8 +5,9 @@
 - Using LÖVE engine
 - Small packets [as small as practically possible]
 - Game hosted in the cloud, give rewards for donating server time
-- Uses 'zones'. Maps are huge, and they're divided. Multiple instances (channels) may exist. Server can rezone whenever it wants to. This is done either to make up for a server disconnection, or to relieve stress.
-- Use 'groups' to ensure everyone stays on the same channel. Also has a few other benefits, like shared EXP and money.
+- Uses 'zones'. Maps are huge, and they're pre-divided into these zones. There's also multiple copies of zones called "instances", a.k.a. "channels".
+- Use 'groups' to ensure everyone stays on the same channel. Also has a few other benefits, like shared EXP and money. Grouping is really simple, you'd just right-click someone and press "Add to Group". Groups are broken upon logging out, and a maximum of <TBD> people can be grouped together at one time.
+- Weather systems, time. Weather patterns move around throughout the world, and can have status effects and even give skills (one such example would be the "Lightningbolt" skill which shoots bolts of lightning out of your hands, only available during a lightning storm.) Each zone is able to decide its weather mappings. For example, a zone can crossover rain -> snow and vice versa, or can decide it will spawn blizzards, or kill tornadoes. Time of day can also affect the effectiveness of skills, and have status efffects. (ex. from 19:00 to 04:59 - health regeneration 2x, from 10:00 to 15:59 - energy regeneration 2x, and the Assassin skill "Cloak" is 5x effectiveness from 22:00 to 01:59, among others.)
 
 ## Gameplay
 
