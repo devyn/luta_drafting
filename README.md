@@ -1,4 +1,4 @@
-![luta](lutalogo-1.png)
+![luta](./lutalogo-1.png)
 
 ## Drafting
 
