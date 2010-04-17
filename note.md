@@ -39,3 +39,10 @@
 - has a big ribbon bar at the bottom with stats, $$$, minimap, a few buttons (quit and etc.), and quick windows (skills, character info, items, etc.)
 - designed to work with a minimal amount of mouse usage.
 - preeeety UI. lulz. do I even have to say? you should know me well enough by now.
+
+## Economy
+
+- Ano, denoted by ȧ: ex. 24.832ȧ
+- an example `Gold Axe` [req: `1000 Lumberjack`] has a suggested retail price of 10ȧ.
+- a `Concentrated Health Potion` [heals 1000 over 5sec dur.] has a suggested retail price of 0.05ȧ
+- an `Animated Tree Stump` monster gives approximately 0.001ȧ to 0.004ȧ
