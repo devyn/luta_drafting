@@ -1,4 +1,4 @@
-![luta](./lutalogo-1.png)
+![luta](/devyn/luta_drafting/raw/master/lutalogo-1.png)
 
 ## Drafting
 
