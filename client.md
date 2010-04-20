@@ -73,9 +73,8 @@
 
 ## Zones
 
-    70  [JSON] World map
-    71  [JSON] World map section (relative)
-    72  Switch to zone <ID : N>
+    70  [JSON] World map section (relative)
+    71  [nC] Query ID:instance
 
 ## Messaging & other
 

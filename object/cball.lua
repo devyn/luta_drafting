@@ -22,14 +22,17 @@ function CBall(world, x, y)
     if love.keyboard.isDown("right") then
       self.body:wakeUp()
       self.body:setLinearVelocity(lvx + 500*dt, lvy)
+      lvx, lvy = self.body:getLinearVelocity()
     end
     if love.keyboard.isDown("left") then
       self.body:wakeUp()
       self.body:setLinearVelocity(lvx - 500*dt, lvy)
+      lvx, lvy = self.body:getLinearVelocity()
     end
     if love.keyboard.isDown("up") then
       self.body:wakeUp()
       self.body:setLinearVelocity(lvx, lvy - 1000*dt)
+      lvx, lvy = self.body:getLinearVelocity()
     end
   end
 
