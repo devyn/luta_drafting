@@ -21,13 +21,15 @@ function NewScene(w, h, vw, vh)
   scene.mousepressed = Scene_MousePressed
   scene.mousereleased = Scene_MouseReleased
 
+  scene.add = table.insert
+  scene.remove = table.remove
+
   scene.follow = nil
   scene.camera = {
     x = 0,
     y = 0,
     w = vw,
-    h = vh,
-    zoom = 1.0
+    h = vh
   }
 
   return scene

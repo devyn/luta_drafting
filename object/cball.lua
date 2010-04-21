@@ -10,11 +10,11 @@ function CBall(world, x, y)
   o.draw = function (self, scene)
     local nx, ny = self.body:getWorldCenter()
     love.graphics.setColor(255, 255, 0, 255*0.70)
-    love.graphics.circle("fill", (nx - scene.camera.x)*scene.camera.zoom, (ny - scene.camera.y)*scene.camera.zoom, 25*scene.camera.zoom, 40)
+    love.graphics.circle("fill", nx - scene.camera.x, ny - scene.camera.y, 25, 40)
 
     love.graphics.setColor(0, 0, 100, 255)
-    love.graphics.setLineWidth(5*scene.camera.zoom)
-    love.graphics.circle("line", (nx - scene.camera.x)*scene.camera.zoom, (ny - scene.camera.y)*scene.camera.zoom, 25*scene.camera.zoom, 40)
+    love.graphics.setLineWidth(5)
+    love.graphics.circle("line", nx - scene.camera.x, ny - scene.camera.y, 25, 40)
   end
 
   o.update = function (self, scene, dt)

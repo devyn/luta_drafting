@@ -1,13 +1,13 @@
 function love.load()
   require('lib/image.lua')
   require('lib/scene.lua')
-  require('object/simple_background.lua')
+  require('object/parallax_background.lua')
   require('object/simple_boundary.lua')
   require('object/cball.lua')
 
   frame = 1
 
-  proto_scene = NewScene(1920, 1080, 800, 600)
+  proto_scene = NewScene(2200, 1100, 800, 600)
 
   require('map/test.lua')(proto_scene)
 

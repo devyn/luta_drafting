@@ -1,7 +1,9 @@
 function LutaImage(fname)
   local id = love.image.newImageData(fname)
   local grid = {w = math.ceil(id:getWidth()/128),
-                h = math.ceil(id:getHeight()/128)}
+                h = math.ceil(id:getHeight()/128),
+                aw = id:getWidth(),
+                ah = id:getHeight()}
   for r = 1, grid.h do
     for c = 1, grid.w do
       local sect = love.image.newImageData(128, 128)
@@ -15,6 +17,7 @@ function LutaImage(fname)
 end
 
 function LutaImage_Draw(self, range, x, y, scale)
+  if type(scale) ~= "number" then scale = 1.0 end
   for i, v in ipairs(self) do
     local r = math.floor(i / self.w)
     local c = i % self.w
