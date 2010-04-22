@@ -10,7 +10,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="1700"
-   height="1100"
+   height="1020"
    id="svg3656"
    version="1.1"
    inkscape:version="0.47 r22583"
@@ -61,7 +61,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -69,7 +69,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,47.63782)">
+     transform="translate(0,-32.36218)">
     <rect
        style="fill:#b0b0b0;fill-opacity:1;stroke:none"
        id="rect4215"
