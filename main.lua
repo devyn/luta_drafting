@@ -5,9 +5,9 @@ function love.load()
   require('object/simple_boundary.lua')
   require('object/cball.lua')
 
-  frame = 1
-
   scene = require('map/test.lua')()
+
+  scene.frame = 1
 
   cb = CBall(scene.physics, unpack(entry_point))
   table.insert(scene, cb)
@@ -17,7 +17,9 @@ end
 
 function love.update(dt)
   scene:update(dt)
-  frame = frame + 1
+  --scene.camera.x = math.sin(frame/200)*(scene.width/2-scene.camera.w/2)+scene.width/2-scene.camera.w/2
+  --scene.camera.y = math.sin(frame/100)*(scene.height/2-scene.camera.h/2)+scene.height/2-scene.camera.h/2
+  scene.frame = scene.frame + 1
 end
 
 function love.draw()

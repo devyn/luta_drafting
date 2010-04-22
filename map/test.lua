@@ -5,6 +5,7 @@ return function ()
 
   scene:add( ParallaxBackground("img/city1 bg1.png") )
   scene:add( ParallaxBackground("img/city1 bg2.png") )
+  scene:add( ParallaxBackground("img/city1 bg3.png") )
   scene:add( ParallaxBackground("img/city1 bg4.png") )
 
   scene:add( SimpleBoundary(scene.physics, 0, 0, 5, 1099)    )
