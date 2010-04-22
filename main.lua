@@ -7,29 +7,31 @@ function love.load()
 
   frame = 1
 
-  proto_scene = NewScene(2200, 1100, 800, 600)
+  scene = require('map/test.lua')()
 
-  require('map/test.lua')(proto_scene)
+  cb = CBall(scene.physics, unpack(entry_point))
+  table.insert(scene, cb)
 
-  cb = CBall(proto_scene.physics, unpack(entry_point))
-  table.insert(proto_scene, cb)
-
-  proto_scene.follow = cb
+  scene.follow = cb
 end
 
 function love.update(dt)
-  proto_scene:update(dt)
+  scene:update(dt)
   frame = frame + 1
 end
 
 function love.draw()
-  proto_scene:draw()
+  scene:draw()
+  love.graphics.setColor(0,0,0)
+  love.graphics.rectangle('fill', 18, 6, 50, 20)
+  love.graphics.setColor(0,0,255)
+  love.graphics.print("FPS "..love.timer.getFPS(), 20, 20)
 end
 
 function love.keypressed(key, unicode)
-  proto_scene:keypressed(key, unicode)
+  scene:keypressed(key, unicode)
 end
 
 function love.keyreleased(key, unicode)
-  proto_scene:keyreleased(key, unicode)
+  scene:keyreleased(key, unicode)
 end

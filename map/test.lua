@@ -1,15 +1,17 @@
-return function (scene)
-  entry_point = {50, 50}
-  a = ParallaxBackground("img/background.png")
-  b = ParallaxBackground("img/wut.png")
+return function ()
+  local scene = NewScene(2200, 1100, love.graphics.getWidth(), love.graphics.getHeight())
 
-  scene:add(a)
-  scene:add(b)
+  entry_point = {50, 50}
+
+  scene:add( ParallaxBackground("img/city1 bg1.png") )
+  scene:add( ParallaxBackground("img/city1 bg2.png") )
+  scene:add( ParallaxBackground("img/city1 bg4.png") )
+
   scene:add( SimpleBoundary(scene.physics, 0, 0, 5, 1099)    )
   scene:add( SimpleBoundary(scene.physics, 2194, 0, 5, 1099) )
-  scene:add( SimpleBoundary(scene.physics, 0, 1094, 2199, 5) )
+  scene:add( SimpleBoundary(scene.physics, 0, 1079, 2199, 20) )
 
-  scene.bgm = love.audio.newSource("music/Backyard.ogg")
+  scene.bgm = love.audio.newSource("music/Urban Life.ogg")
   scene.bgm:setLooping(true)
   scene.bgm:setVolume(0.9)
 
@@ -21,9 +23,9 @@ return function (scene)
     keyreleased = function (self, scene, key, unicode)
       if key == 'escape' then
         love.event.push('q')
-      elseif key == 'd' then
-        print(a.scx, a.scy, "&", b.scx, b.scy)
       end
     end
   }
+
+  return scene
 end
